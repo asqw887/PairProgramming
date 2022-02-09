@@ -14,3 +14,7 @@ let cal = MyCalendar()
 let dateStr = "2022-02-06"
 print(cal.stringToDate(dateStr))
 
+let dateInt = [2022, 02, 08]
+print(cal.intToDate(dateInt))
+
+let date = Date()
