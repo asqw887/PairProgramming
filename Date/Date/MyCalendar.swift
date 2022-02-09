@@ -14,9 +14,10 @@
 
 import Foundation
 
+
+
 class MyCalendar{
-    
-    
+
     //오늘 날짜의 년, 월, 일, 시, 분, 초 숫자만 포함하는 객체로 리턴하는 함수
     func todayDate() -> Date {
         return Date()
@@ -27,10 +28,11 @@ class MyCalendar{
     
     func stringToDate(_ str: String) -> Date {
         
-        let dateString = str.split(separator: ".")
-        let dateComponent = DateComponents(year:date[0],
+//        let dateString = str.split(separator: ".")
+//        let dateComponent = DateComponents(year: Int(dateString[0]), month: Int(dateString[1]), day: Int(dateString[2]))
         
-        return
+        return formatter.date(from: str)!
+        
     }
     
     
