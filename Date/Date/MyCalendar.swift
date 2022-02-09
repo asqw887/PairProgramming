@@ -28,8 +28,14 @@ class MyCalendar{
     
     func stringToDate(_ str: String) -> Date {
         
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.locale = Locale(identifier: "ko_KR")
+
 //        let dateString = str.split(separator: ".")
 //        let dateComponent = DateComponents(year: Int(dateString[0]), month: Int(dateString[1]), day: Int(dateString[2]))
+//        let calendear = Calendar.current
+        
         
         return formatter.date(from: str)!
         

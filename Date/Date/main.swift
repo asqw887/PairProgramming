@@ -7,11 +7,10 @@
 
 import Foundation
 
-let formatter = DateFormatter()
-formatter.dateFormat = "yyyy.mm.dd"
 
 let cal = MyCalendar()
-print(cal.todayDate())
+//print(cal.todayDate())
 
-let dateStr = "2022.2.6"
+let dateStr = "2022-02-06"
 print(cal.stringToDate(dateStr))
+
